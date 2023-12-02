@@ -37,21 +37,22 @@
   </head>
   <body>
     <!-- Header -->
-    <header id="header">
-      <a href="index.html" class="title">Hyperspace</a>
-      <nav>
-        <ul>
-          <li><a href="#about" class="active">About me</a></li>
-          <li><a href="projects">Projects</a></li>
-          <li><a href="contact">Contact</a></li>
+    <header id="main-header" class="main-header">
+      <a href="index.html" class="title">MM</a>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="nav-link"><a href="#about" class="active">About me</a></li>
+          <li class="nav-link"><a href="#projects">Projects</a></li>
+          <li class="nav-link"><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <!-- Float links to the right. Hide them on small screens -->
-      <div class="w3-right w3-hide-small">
-        <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-        <a href="#about" class="w3-bar-item w3-button">About</a>
-        <a href="#contact" class="w3-bar-item w3-button">Contact</a>
-      </div>
+      <nav class="navbar-collapse">
+        <a href="#about" class="nav-item">About</a>
+        <a href="#projects" class="nav-item">Projects</a>
+
+        <a href="#contact" class="nav-item">Contact</a>
+      </nav>
     </header>
 
     <!-- Wrapper -->
