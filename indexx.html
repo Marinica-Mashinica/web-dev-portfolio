@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/spacelab/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
+    <link rel="stylesheet" href="./assets/css/wthree.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Raleway"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./assets/css/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header id="main-header" class="main-header">
+      <a href="index.html" class="title">MM</a>
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li class="nav-link"><a href="#about" class="active">About me</a></li>
+          <li class="nav-link"><a href="#projects">Projects</a></li>
+          <li class="nav-link"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Float links to the right. Hide them on small screens -->
+      <nav class="navbar-collapse">
+        <a href="#about" class="nav-item">About</a>
+        <a href="#projects" class="nav-item">Projects</a>
+
+        <a href="#contact" class="nav-item">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Main -->
+      <section id="main" class="wrapper">
+        <div class="inner">
+          <section class="hero-section">
+            <h2>
+              Hi, I'm <span>Marina Majdenić</span>,
+              <span id="replace-text">Frontend</span> / Web / JavaScript / React
+              developer from Zagreb, Croatia.
+            </h2>
+            <h3>What's up with me?</h3>
+            <ul>
+              <li>currently in love with React</li>
+              <li>very impressed with GSAP</li>
+              <li>love animating websites</li>
+              <li>looking for a full-time job!</li>
+            </ul>
+          </section>
+          <section>
+            <div class="w3-quarter">
+              <i
+                class="fa fa-brands fa-html5 w3-margin-bottom w3-jumbo w3-center"
+              ></i>
+              <p class="w3-large">HTML</p>
+              <p>
+                Started learning HTML when I was only 14 years old, having fun
+                building and styling blog websites. My first payment ever was
+                for a cool blogger in my country, and I was very proud! Even
+                these days I have great respect for markup, especially semantic
+                HTML, and I enjoy rewriting it to make it more accessible and
+                SEO friendly.
+              </p>
+            </div>
+            <div class="w3-quarter">
+              <i class="fa-brands fa-css3 w3-margin-bottom w3-jumbo"></i>
+              <p class="w3-large">CSS</p>
+              <p>
+                Although I was scared of CSS in the beginning, I soon realized
+                how powerful it is and how much fun it can be. In my free time,
+                I like to browse through incredibly creative snippets people are
+                writing and I still get amazed on how arbitrary CSS can be,
+                there are literally unlimited possibilites, if you are creative
+                enough.
+              </p>
+            </div>
+            <div class="w3-quarter">
+              <i class="fa-brands fa-js w3-margin-bottom w3-jumbo"></i>
+              <p class="w3-large">JavaScript</p>
+              <p>
+                The more and more I know and learn about JavaScrip, the more
+                respect I have for that language! It was always such a powerful
+                tool, but lately it's going out of the stratosphere! I have a
+                feeling it's going to be my way into backend, or well, it maybe
+                already is...
+              </p>
+            </div>
+            <div class="w3-quarter">
+              <i class="fa-brands fa-react w3-margin-bottom w3-jumbo"></i>
+              <p class="w3-large">React</p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore.
+              </p>
+            </div>
+          </section>
+          <section>
+            <div class="w3-row-padding" style="margin-top: 64px">
+              <div class="w3-col l3 m6">
+                <img
+                  src="/w3images/tech_mic.jpg"
+                  style="width: 100%"
+                  onclick="onClick(this)"
+                  class="w3-hover-opacity"
+                  alt="A microphone"
+                />
+              </div>
+              <div class="w3-col l3 m6">
+                <img
+                  src="/w3images/tech_phone.jpg"
+                  style="width: 100%"
+                  onclick="onClick(this)"
+                  class="w3-hover-opacity"
+                  alt="A phone"
+                />
+              </div>
+              <div class="w3-col l3 m6">
+                <img
+                  src="/w3images/tech_drone.jpg"
+                  style="width: 100%"
+                  onclick="onClick(this)"
+                  class="w3-hover-opacity"
+                  alt="A drone"
+                />
+              </div>
+              <div class="w3-col l3 m6">
+                <img
+                  src="/w3images/tech_sound.jpg"
+                  style="width: 100%"
+                  onclick="onClick(this)"
+                  class="w3-hover-opacity"
+                  alt="Soundbox"
+                />
+              </div>
+            </div>
+          </section>
+          <h1 class="major">A Generic Page</h1>
+          <span class="image fit"><img src="images/pic04.jpg" alt="" /></span>
+          <p>
+            Donec eget ex magna. Interdum et malesuada fames ac ante ipsum
+            primis in faucibus. Pellentesque venenatis dolor imperdiet dolor
+            mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor
+            sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet,
+            fergiat. Pellentesque in mi eu massa lacinia malesuada et a elit.
+            Donec urna ex, lacinia in purus ac, pretium pulvinar mauris.
+            Curabitur sapien risus, commodo eget turpis at, elementum convallis
+            elit. Pellentesque enim turpis, hendrerit tristique.
+          </p>
+          <p>
+            Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            Pellentesque venenatis dolor imperdiet dolor mattis sagittis.
+            Praesent rutrum sem diam, vitae egestas enim auctor sit amet.
+            Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien
+            risus, commodo eget turpis at, elementum convallis elit.
+            Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer" class="wrapper alt">
+      <a href="#home" class="w3-button w3-light-grey">
+        <i class="fa-solid fa-arrow-up w3-margin-right"></i>To the top</a
+      >
+      <div class="w3-xlarge w3-section">
+        <i class="fa-brands fa-github-square w3-hover-opacity"></i>
+        <i class="fa-brands fa-linkedin-square w3-hover-opacity"></i>
+        <i class="fa-brands fa-google-plus-square"></i>
+      </div>
+      <p>
+        Copyright <i class="fa-solid fa-copyright w3-hover-opacity"></i> Marina
+        Majdenić <br />
+        2023.
+      </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./assets/script/header.js" type="module"></script>
+    <script src="./assets/script/script.js" type="module"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
