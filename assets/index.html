@@ -35,6 +35,27 @@
     />
     <link href="./assets/css/main.css" rel="stylesheet" />
   </head>
+  <style>
+    .loader {
+      width: 100px;
+      height: 100px;
+      box-shadow: 0px 20px 40px #ff4646, 0px -20px 40px #8949ff,
+        20px 0px 40px#ff07fb, -20px 0px 40px #ff07fb;
+      border-radius: 10em;
+      position: relative;
+      animation: rotate 1s linear infinite;
+    }
+
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
   <body>
     <!-- Header -->
     <header id="main-header" class="main-header">
@@ -50,7 +71,6 @@
       <nav class="navbar-collapse">
         <a href="#about" class="nav-item">About</a>
         <a href="#projects" class="nav-item">Projects</a>
-
         <a href="#contact" class="nav-item">Contact</a>
       </nav>
     </header>
@@ -121,6 +141,7 @@
               </p>
             </div>
           </section>
+          <div class="loader"></div>
           <section>
             <div class="w3-row-padding" style="margin-top: 64px">
               <div class="w3-col l3 m6">
